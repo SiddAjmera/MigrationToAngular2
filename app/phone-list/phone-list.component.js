@@ -16,9 +16,9 @@ var PhoneListController = (function () {
         this.phones = Phone.query();
         this.orderProp = 'age';
     }
+    PhoneListController.$inject = ['Phone'];
     return PhoneListController;
 }());
-PhoneListController.$inject = ['Phone'];
 angular.
     module('phoneList').
     component('phoneList', {

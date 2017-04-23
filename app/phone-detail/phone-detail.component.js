@@ -27,9 +27,9 @@ var PhoneDetailController = (function () {
     PhoneDetailController.prototype.setImage = function (imageUrl) {
         this.mainImageUrl = imageUrl;
     };
+    PhoneDetailController.$inject = ['$routeParams', 'Phone'];
     return PhoneDetailController;
 }());
-PhoneDetailController.$inject = ['$routeParams', 'Phone'];
 angular.
     module('phoneDetail').
     component('phoneDetail', {
